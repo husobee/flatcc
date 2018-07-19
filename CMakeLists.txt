@@ -50,11 +50,11 @@ option(FLATCC_COVERAGE "enable coverage" OFF)
 # enabled. This requires rebuilding the runtime library and will likely
 # break test cases (those that tests that an invalid buffer is invalid).
 option (FLATCC_DEBUG_VERIFY
-    "assert on verify failure in runtime lib" OFF)
+    "assert on verify failure in runtime lib" ON)
 
 # Print detailed traces of binary buffer contents when calling verify.
 option (FLATCC_TRACE_VERIFY
-    "assert on verify failure in runtime lib" OFF)
+    "assert on verify failure in runtime lib" ON)
 
 # Reflection is the compilers ability to generate binary schema output
 # (.bfbs files). This requires using generated code from
